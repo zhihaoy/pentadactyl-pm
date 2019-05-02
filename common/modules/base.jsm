@@ -1815,7 +1815,7 @@ update(iter, {
 });
 
 var Iter = Class("Iter", {
-    init(iter) {
+    init: function init(iter) {
         this.iter = iter;
         if (!(Symbol.iterator in iter) && "__iterator__" in iter)
             this.iter = iter.__iterator__();

@@ -476,7 +476,7 @@ var Ex = Module("Ex", {
 
     commands: null,
 
-    init() {
+    init: function init() {
         let proxy = new Proxy(this, {
             get(target, prop, receiver) {
                 if (prop === "isProxy")
